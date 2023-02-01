@@ -1,0 +1,8 @@
+# c.f. https://github.com/github/gitignore/blob/main/Python.gitignore
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
