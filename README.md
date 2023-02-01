@@ -46,7 +46,7 @@ docker run \
 
 ## Examples
 
-In a [notebook in the Wolfram Language Engine kernel](https://twitter.com/HEPfeickert/status/1620626979862216707?s=20&t=eiag_8Odc3xhV_3LvmFLiw)
+In a [notebook in the Wolfram Language Engine kernel](https://twitter.com/HEPfeickert/status/1620626979862216707?s=20&t=eiag_8Odc3xhV_3LvmFLiw) the following example commands work
 
 ```
 $Version
@@ -55,3 +55,7 @@ $Version
 ```
 Plot3D[Sin[x y],{x,-Pi,Pi},{y,-Pi,Pi}]
 ```
+
+as does the example use case given in [Nicolás Guarín-Zapata](https://github.com/nicoguaro) 2021-03-30 [blog post](https://nicoguaro.github.io/posts/wolfram_jupyter/):
+
+[![example-notebook](https://user-images.githubusercontent.com/5142394/215956408-16281d32-e039-481e-a7b3-5fe413b05538.png)](https://nicoguaro.github.io/posts/wolfram_jupyter/)
