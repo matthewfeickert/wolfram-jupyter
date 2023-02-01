@@ -59,3 +59,8 @@ Plot3D[Sin[x y],{x,-Pi,Pi},{y,-Pi,Pi}]
 as does the example use case given in [Nicolás Guarín-Zapata](https://github.com/nicoguaro) 2021-03-30 blog post ["Using Wolfram Language in Jupyter: A free alternative to Mathematica"](https://nicoguaro.github.io/posts/wolfram_jupyter/):
 
 ![example-notebook](https://user-images.githubusercontent.com/5142394/215956408-16281d32-e039-481e-a7b3-5fe413b05538.png)
+
+```
+# Inside of container
+$ wolframscript -file ./tests/test.wls
+```
