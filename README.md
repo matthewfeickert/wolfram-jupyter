@@ -23,10 +23,10 @@ export WOLFRAM_PASSWORD="your Wolfram ID password"
 
 docker buildx build . \
     --file Dockerfile \
-	--build-arg BASE_IMAGE=wolframresearch/wolframengine:13.2.0 \
-	--build-arg WOLFRAM_ID="${WOLFRAM_ID}" \
-	--build-arg WOLFRAM_PASSWORD="${WOLFRAM_PASSWORD}" \
-	--tag matthewfeickert/wolfram-jupyter:latest
+    --build-arg BASE_IMAGE=wolframresearch/wolframengine:13.2.0 \
+    --build-arg WOLFRAM_ID="${WOLFRAM_ID}" \
+    --build-arg WOLFRAM_PASSWORD="${WOLFRAM_PASSWORD}" \
+    --tag matthewfeickert/wolfram-jupyter:latest
 
 unset WOLFRAM_ID
 unset WOLFRAM_PASSWORD
@@ -46,7 +46,7 @@ docker run \
 
 ## Examples
 
-In a [notebook in the Wolfram Language Engine kernel](https://twitter.com/HEPfeickert/status/1620626979862216707?s=20&t=eiag_8Odc3xhV_3LvmFLiw)
+In a [notebook in the Wolfram Language Engine kernel](https://twitter.com/HEPfeickert/status/1620626979862216707?s=20&t=eiag_8Odc3xhV_3LvmFLiw) the following example commands work
 
 ```
 $Version
@@ -55,3 +55,7 @@ $Version
 ```
 Plot3D[Sin[x y],{x,-Pi,Pi},{y,-Pi,Pi}]
 ```
+
+as does the example use case given in [Nicolás Guarín-Zapata](https://github.com/nicoguaro) 2021-03-30 blog post ["Using Wolfram Language in Jupyter: A free alternative to Mathematica"](https://nicoguaro.github.io/posts/wolfram_jupyter/):
+
+![example-notebook](https://user-images.githubusercontent.com/5142394/215956408-16281d32-e039-481e-a7b3-5fe413b05538.png)
