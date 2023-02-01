@@ -23,10 +23,10 @@ export WOLFRAM_PASSWORD="your Wolfram ID password"
 
 docker buildx build . \
     --file Dockerfile \
-	--build-arg BASE_IMAGE=wolframresearch/wolframengine:13.2.0 \
-	--build-arg WOLFRAM_ID="${WOLFRAM_ID}" \
-	--build-arg WOLFRAM_PASSWORD="${WOLFRAM_PASSWORD}" \
-	--tag matthewfeickert/wolfram-jupyter:latest
+    --build-arg BASE_IMAGE=wolframresearch/wolframengine:13.2.0 \
+    --build-arg WOLFRAM_ID="${WOLFRAM_ID}" \
+    --build-arg WOLFRAM_PASSWORD="${WOLFRAM_PASSWORD}" \
+    --tag matthewfeickert/wolfram-jupyter:latest
 
 unset WOLFRAM_ID
 unset WOLFRAM_PASSWORD
