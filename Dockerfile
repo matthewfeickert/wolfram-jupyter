@@ -1,4 +1,4 @@
-ARG BASE_IMAGE=wolframresearch/wolframengine:13.2.0
+ARG BASE_IMAGE=wolframresearch/wolframengine:13.3.0
 FROM ${BASE_IMAGE} as base
 
 SHELL [ "/bin/bash", "-c" ]
@@ -9,7 +9,7 @@ USER root
 
 # Set PATH to pickup virtualenv by default
 ENV PATH=/usr/local/venv/bin:"${PATH}"
-ARG PYTHON_VERSION=3.10
+ARG PYTHON_VERSION=3.11
 RUN apt-get -qq -y update && \
     apt-get -qq -y install \
       software-properties-common \
@@ -41,7 +41,7 @@ SHELL [ "/bin/bash", "-c" ]
 ENV PATH=/usr/local/venv/bin:"${PATH}"
 
 # Install any packages needed by default user
-ARG PYTHON_VERSION=3.10
+ARG PYTHON_VERSION=3.11
 RUN apt-get -qq -y update && \
     apt-get -qq -y install \
       software-properties-common \

@@ -5,8 +5,8 @@ Docker image with Jupyter Lab and Wolfram Language Engine kernel for Jupyter
 
 The Docker image contains:
 
-* Python 3.10
-* [Wolfram Language Engine](https://www.wolfram.com/engine/) v13.2.0
+* Python 3.11
+* [Wolfram Language Engine](https://www.wolfram.com/engine/) v13.3.0
    - Requires a [Free Wolfram Engine License](https://account.wolfram.com/access/wolfram-engine/free) which requires a Wolfram account
 * Jupyter Lab
 * [Wolfram Language kernel for Jupyter](https://github.com/WolframResearch/WolframLanguageForJupyter)
@@ -23,7 +23,7 @@ export WOLFRAM_PASSWORD="your Wolfram ID password"
 
 docker buildx build . \
     --file Dockerfile \
-    --build-arg BASE_IMAGE=wolframresearch/wolframengine:13.2.0 \
+    --build-arg BASE_IMAGE=wolframresearch/wolframengine:13.3.0 \
     --build-arg WOLFRAM_ID="${WOLFRAM_ID}" \
     --build-arg WOLFRAM_PASSWORD="${WOLFRAM_PASSWORD}" \
     --tag matthewfeickert/wolfram-jupyter:latest
@@ -50,7 +50,7 @@ In a [notebook in the Wolfram Language Engine kernel](https://twitter.com/HEPfei
 
 ```
 $Version
-13.2.0 for Linux x86 (64-bit) (December 12, 2022)
+13.3.0 for Linux x86 (64-bit) (June 12, 2023)
 ```
 ```
 Plot3D[Sin[x y],{x,-Pi,Pi},{y,-Pi,Pi}]
